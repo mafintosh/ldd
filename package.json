@@ -1,0 +1,23 @@
+{
+  "name": "ldd",
+  "version": "0.0.0",
+  "description": "Programmatic interface to ldd",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/ldd.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/ldd/issues"
+  },
+  "homepage": "https://github.com/mafintosh/ldd"
+}
