@@ -1,6 +1,6 @@
 {
   "name": "ldd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Programmatic interface to ldd",
   "main": "index.js",
   "dependencies": {},
