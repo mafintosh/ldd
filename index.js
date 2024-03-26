@@ -4,12 +4,12 @@ ldd.sync = lddSync
 module.exports = ldd
 
 function lddSync (path) {
-  const buf = proc.execSync('ldd ' + JSON.stringify(path))
+  const buf = proc.execFileSync('ldd', [path])
   return parse(buf.toString())
 }
 
 function ldd (path, cb) {
-  proc.exec('ldd ' + JSON.stringify(path), function (err, stdout, stderr) {
+  proc.execFile('ldd', [path], function (err, stdout, stderr) {
     if (err) return cb(err)
     if (stderr) return cb(new Error(stderr))
     cb(null, parse(stdout))
